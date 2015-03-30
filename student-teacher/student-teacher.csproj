@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E17D2DDE-1A3D-4F3E-99CF-D4284F8E7FB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>student_teacher</RootNamespace>
+    <AssemblyName>student-teacher</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\360Downloads\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abc.Designer.cs">
+      <DependentUpon>abc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addclass.Designer.cs">
+      <DependentUpon>addclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cba.Designer.cs">
+      <DependentUpon>cba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change.Designer.cs">
+      <DependentUpon>change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infor.Designer.cs">
+      <DependentUpon>infor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ma.Designer.cs">
+      <DependentUpon>ma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stulo.Designer.cs">
+      <DependentUpon>stulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notciget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notciget.Designer.cs">
+      <DependentUpon>notciget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stutable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stutable.Designer.cs">
+      <DependentUpon>stutable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tealo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tealo.Designer.cs">
+      <DependentUpon>tealo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teatable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teatable.Designer.cs">
+      <DependentUpon>teatable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getmes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="getmes.Designer.cs">
+      <DependentUpon>getmes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendmes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendmes.Designer.cs">
+      <DependentUpon>sendmes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noticese.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="noticese.Designer.cs">
+      <DependentUpon>noticese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="success.Designer.cs">
+      <DependentUpon>success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fail.Designer.cs">
+      <DependentUpon>fail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="abc.resx">
+      <DependentUpon>abc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addclass.resx">
+      <DependentUpon>addclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cba.resx">
+      <DependentUpon>cba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change.resx">
+      <DependentUpon>change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infor.resx">
+      <DependentUpon>infor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ma.resx">
+      <DependentUpon>ma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stulo.resx">
+      <DependentUpon>stulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notciget.resx">
+      <DependentUpon>notciget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stutable.resx">
+      <DependentUpon>stutable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tealo.resx">
+      <DependentUpon>tealo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teatable.resx">
+      <DependentUpon>teatable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getmes.resx">
+      <DependentUpon>getmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendmes.resx">
+      <DependentUpon>sendmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noticese.resx">
+      <DependentUpon>noticese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="success.resx">
+      <DependentUpon>success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fail.resx">
+      <DependentUpon>fail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
